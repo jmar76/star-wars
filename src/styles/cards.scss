@@ -1,0 +1,18 @@
+
+.container-fluid .hover:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+    transition: all 0.7s;
+    transform: scale(1.9);
+
+}
+
+.color{
+
+    color:white;
+}
+
+
+// transition-property: all;
+//   transition-duration: 0.2s;
+  
