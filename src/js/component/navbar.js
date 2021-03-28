@@ -30,12 +30,13 @@ export const Navbar = () => {
 								<strong>LOG IN </strong> <span className="sr-only">(current)</span>
 							</a>
 						</li>
-
-						<li className="nav-item">
-							<a className="nav-link text-danger" href="#">
-								SIGN UP
-							</a>
-						</li>
+						<Link to="/formulario">
+							<li className="nav-item">
+								<a className="nav-link text-danger" href="#">
+									<strong>BUY</strong>
+								</a>
+							</li>
+						</Link>
 					</ul>
 				</div>
 

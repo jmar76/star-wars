@@ -1,0 +1,111 @@
+.back{
+    background-color: rgba(0, 128, 0, 0.288);
+    border-radius: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px!important;
+}
+.warning{
+    padding-top: 55px;
+    margin-top: 115px;
+    border-color:black;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.imagen{
+    padding-bottom: 30px;
+}
+.check{
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 20px;
+}
+.justify{
+    padding-left:15px ;
+}
+.fondo{
+    // background-color: rgba(255, 0, 0, 0.452);
+     border-radius: 7px;
+     padding:5px;
+}
+.align{
+  align-items: center;
+}
+.imagenes{
+    width: 800px;
+    height: 100px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+}
+.imagen2{
+    padding-left: 15px;
+}
+.imagen3{
+    padding-left: 15px;
+}
+.pay{
+    padding-left: 300px;
+
+}
+.redondeado {
+   border-radius: 5px;
+   width: 460px;
+ }
+
+.redondeado2 {
+   border-radius: 5px;
+   width: 160px;
+ }
+.redondeado3 {
+   border-radius: 5px;
+   width: 160px;
+ }
+.firstname{
+    border-radius: 5px;
+    width: 360px;
+}
+.lastname{
+    border-radius: 5px;
+    width: 360px;
+}
+.cityborder{
+    border-radius: 5px;
+    width: 360px;
+}
+.stateborder{
+    border-radius: 5px;
+    width: 260px;
+}
+.postalborder{
+    border-radius: 5px;
+    width: 100px;
+}
+.dateborder{
+    border-radius: 5px;
+    width: 160px;
+}
+.yeareborder{
+    border-radius: 5px;
+    width: 60px;
+}
+.messageborder{
+       border-radius: 5px;
+         width: 460px;
+}
+.border1{
+    border-radius: 5px;
+}
+
+.backgroundtitle{
+    background-color: black;
+    color: yellow;
+    font-size: 15px;
+    padding:5px;
+    border-radius: 5px;
+}
+.backend{
+    background-color: black
+}
+.personalized{
+    padding:66px;
+}
