@@ -18,7 +18,7 @@ function CardStarship({ name, features }) {
 	return (
 		<div className="card dark" style={{ width: "21rem" }}>
 			<img
-				src="https://necrocine.cl/wp-content/uploads/2020/06/img_agarcial_20200615-171403_imagenes_lv_terceros_sws-kII-U481793559525iEC-992x558@LaVanguardia-Web.png"
+				src="https://p4.wallpaperbetter.com/wallpaper/903/382/518/t-70-x-wing-fighter-star-wars-battlefront-ii-4k-wallpaper-preview.jpg"
 				className="card-img-top"
 				alt="..."
 				width="100%"
