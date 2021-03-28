@@ -49,7 +49,8 @@ function CardStarship({ name, features }) {
 					<i className="fas fa-heart text-white btn btn-outline-danger rounded-0" />
 				</div>
 				<div className="row text-yellow center">
-					<Stars />
+					{" "}
+					<Stars />{" "}
 				</div>
 			</div>
 		</div>

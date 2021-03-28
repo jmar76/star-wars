@@ -2,13 +2,13 @@ import React, { useContext, useState, Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/navbar.scss";
-import emblema from "../store/personajes/emblema.jpg";
+import emblemas from "../store/personajes/emblemas.jpg";
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<Fragment>
-			<nav className="navbar navbar-expand-lg navbar-light fixed-top fondo ">
+			<nav className="navbar navbar-expand-lg navbar-light fixed-top fond ">
 				<button
 					className="navbar-toggler text-danger"
 					type="button"
@@ -27,7 +27,7 @@ export const Navbar = () => {
 					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li className="nav-item active">
 							<a className="nav-link text-danger" data-toggle="modal" data-target="#ventana1" href="#">
-								LOG IN <span className="sr-only">(current)</span>
+								<strong>LOG IN </strong> <span className="sr-only">(current)</span>
 							</a>
 						</li>
 
@@ -43,7 +43,7 @@ export const Navbar = () => {
 					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li className="nav-item active">
 							<Link to="/" className="navbar-brand mb-0 h1">
-								<img src="emblema.jpg" height="90px" width="210px" alt="..." />
+								<img src="emblemas.jpg" height="90px" width="210px" alt="..." />
 							</Link>
 						</li>
 					</ul>
@@ -86,7 +86,7 @@ export const Navbar = () => {
 				<div className="modal-fade-show" aria-modal="true" style={{ display: "block" }}>
 					<div className="modal-dialog modal-login">
 						<div className="modal-content">
-							<form action method="post">
+							<form method="post">
 								<div className="modal-header">
 									<h4 className="modal-title">LOGIN</h4>
 									<button type="button" className="close" data-dismiss="modal" aria-hidden="true">

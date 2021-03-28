@@ -23,17 +23,14 @@ function StarIcon(props) {
 function RatingIcon(props) {
 	const { index, rating, hoverRating, onMouseEnter, onMouseLeave, onSaveRating } = props;
 
-	const fill = useMemo(
-		() => {
-			if (hoverRating >= index) {
-				return "orange";
-			} else if (!hoverRating && rating >= index) {
-				return "orange";
-			}
-			return "none";
-		},
-		[rating, hoverRating, index]
-	);
+	const fill = useMemo(() => {
+		if (hoverRating >= index) {
+			return "orange";
+		} else if (!hoverRating && rating >= index) {
+			return "orange";
+		}
+		return "none";
+	}, [rating, hoverRating, index]);
 
 	return (
 		<div
@@ -82,9 +79,9 @@ StarIcon.propTypes = {
 	fill: PropTypes.string
 };
 RatingIcon.propTypes = {
-	index: PropTypes.string,
-	rating: PropTypes.string,
-	hoverRating: PropTypes.string,
+	index: PropTypes.number,
+	rating: PropTypes.number,
+	hoverRating: PropTypes.number,
 	onMouseEnter: PropTypes.func,
 	onMouseLeave: PropTypes.func,
 	onSaveRating: PropTypes.func

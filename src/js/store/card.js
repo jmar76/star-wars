@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import Proptypes from "prop-types"; //Import PropTypes
 import "../../styles/card.scss";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext";
+import { Context } from "./appContext";
 import Stars from "../component/stars.js";
 function Card({ name, features, id }) {
 	//console.log(features);
@@ -17,9 +17,10 @@ function Card({ name, features, id }) {
 	//console.log(result);
 	const [color, setColor] = useState(<i className="fas fa-heart text-white btn btn-outline-danger  rounded-100" />);
 	const [colors, setColors] = useState(
-		<i className="far fa-thumbs-up text-white btn btn-outline-danger rounded-100" />
+		// <i className="far fa-thumbs-up text-white btn btn-outline-danger rounded-100" />
+		"btn btn-outline-danger rounded-100"
 	);
-	console.log(colors);
+
 	// const next =
 	// 	colors == <i className="far fa-thumbs-up text-white btn btn-outline-danger rounded-100" /> ? (
 	// 		<i className="far fa-thumbs-up text-white btn btn-danger rounded-100" />
@@ -27,10 +28,10 @@ function Card({ name, features, id }) {
 	// 		<i className="far fa-thumbs-up text-white btn btn-outline-danger rounded-100" />
 	// 	);
 	const likeClick = () => {
-		if (colors === <i className="far fa-thumbs-up text-white btn btn-outline-danger rounded-100" />) {
-			setColors(<i className="far fa-thumbs-up text-white btn btn-danger rounded-100" />);
+		if (colors === " btn btn-outline-danger rounded-100") {
+			setColors("btn btn-danger rounded-100");
 		} else {
-			setColors(<i className="far fa-thumbs-up text-white btn btn-outline-danger rounded-100" />);
+			setColors(" btn btn-outline-danger rounded-100");
 		}
 	};
 
@@ -43,7 +44,7 @@ function Card({ name, features, id }) {
 	};
 	useEffect(() => {
 		corazon();
-	});
+	}, []);
 
 	const handleClick = () => {
 		//actions.addColor(color);
@@ -77,15 +78,15 @@ function Card({ name, features, id }) {
 	return (
 		<div>
 			<div className="card dark " style={{ width: "21rem" }}>
-				{/* <div>
+				<div>
 					<img
-						src="https://2.bp.blogspot.com/-q7SGFRZzvjo/XerQyN-ZxbI/AAAAAAAASA4/IwxhYERnaO8g0diEy89CuHXf_N4upeBVwCLcBGAsYHQ/w0/kylo-ren-lightsaber-star-wars-the-rise-of-skywalker-uhdpaper.com-4K-7.561.jpg"
+						src="https://store-images.s-microsoft.com/image/apps.40057.13982743944721264.aba8e5da-4441-4232-a0e1-21747a781f2b.0c0baeb1-555e-4ef5-af93-ca8b1bd633d7"
 						className="card-img-top image"
 						alt="..."
 						width="100%"
 						height="199px"
 					/>
-				</div> */}
+				</div>
 				<div className="card-body text-white ">
 					<h5 className="card-title text">{name}</h5>
 					<div className="card-text size">
@@ -130,10 +131,13 @@ function Card({ name, features, id }) {
 							<i className="far fa-comment text-white btn btn-outline-danger rounded-100" />
 						</strong>
 
-						<i onClick={likeClick}>{colors}</i>
+						<button onClick={likeClick} className={colors}>
+							<i className="far fa-thumbs-up text-white" />
+						</button>
 					</div>
 					<div className="row text-yellow center">
-						<Stars />
+						{" "}
+						<Stars />{" "}
 					</div>
 				</div>
 			</div>

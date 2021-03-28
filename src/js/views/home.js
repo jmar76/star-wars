@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.scss";
-//import Cards from "../store/cards.js";
 import CardsPlanets from "../store/cardsplanets";
 import CardsStarships from "../store/cardsstarships";
-//import PropTypes from "prop-types";
 import Card from "../store/card.js";
 
 export const Home = () => {
@@ -24,9 +22,13 @@ export const Home = () => {
 		<div className="App">
 			<div className="container-fluid pt-3 ">
 				<div className="row">
-					<div className="col-md-3">
+					<div className="col-md-1">
 						<h2 className="color">Characters</h2>
-						<p className="text-white">
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-md-3">
+						<p className="text-white fondo">
 							This list of characters from the Star Wars franchise contains only those which are
 							considered part of the official Star Wars canon, as of the changes made by Lucasfilm in
 							April 2014. Following its acquisition by The Walt Disney Company in 2012, Lucasfilm
@@ -37,11 +39,14 @@ export const Home = () => {
 					</div>
 				</div>
 				<div className="row flex-row flex-sm-nowrap pt-3">{People}</div>
-
-				<h2 className="color ho">Planets</h2>
+				<div className="row ho">
+					<div className="col-md-1">
+						<h2 className="color">Planets</h2>
+					</div>
+				</div>
 				<div className="row">
 					<div className="col-md-3">
-						<p className="text-white">
+						<p className="text-white fondo">
 							The fictional universe of the Star Wars franchise features multiple planets and moons. While
 							only the feature films and selected other works are considered canon to the franchise since
 							the 2012 acquisition of Lucasfilm by The Walt Disney Company, some canon planets were first
@@ -50,13 +55,15 @@ export const Home = () => {
 						</p>
 					</div>
 				</div>
-
 				<CardsPlanets />
-
-				<h2 className="color ho">Starships</h2>
+				<div className="row ho">
+					<div className="col-md-1">
+						<h2 className="color ">Starships</h2>
+					</div>
+				</div>
 				<div className="row">
 					<div className="col-md-3">
-						<p className="text-white">
+						<p className="text-white fondo">
 							The following is a list of starships, cruisers, battleships, and other spacecraft in the
 							Star Wars films, books, and video games.
 						</p>

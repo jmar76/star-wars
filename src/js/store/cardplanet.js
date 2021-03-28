@@ -49,7 +49,8 @@ function CardPlanets({ name, features }) {
 					<i className="fas fa-heart text-white btn btn-outline-dark rounded-0" />
 				</div>
 				<div className="row text-yellow center">
-					<Stars />
+					{" "}
+					<Stars />{" "}
 				</div>
 			</div>
 		</div>

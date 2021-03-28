@@ -17,7 +17,15 @@ body {
 }
 
 .color{
-    color:white;
+    color:yellow !important;
+    background-color:rgba(0, 0, 0, 0.651);
+    border-radius: 11px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    text-align: center;
+
 }
 .App{
 padding-top:210px;
@@ -25,9 +33,19 @@ padding-top:210px;
 
 }
 .ho{
-    padding-top: 50px;
+    padding-top: 69px;
    
+ }
+// body {
+//      background-color:rgba(0, 0, 0, 0.877);
+//   }
+.fondo {
+
+    background-color:rgba(0, 0, 0, 0.651)!important;
+    border-radius: 9px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+  
 }
-body {
-     background-color:rgba(0, 0, 0, 0.877);
-  }
