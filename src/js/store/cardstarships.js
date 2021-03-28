@@ -18,7 +18,7 @@ function CardStarship({ name, features }) {
 	return (
 		<div className="card dark" style={{ width: "21rem" }}>
 			<img
-				src="https://p4.wallpaperbetter.com/wallpaper/903/382/518/t-70-x-wing-fighter-star-wars-battlefront-ii-4k-wallpaper-preview.jpg"
+				src="https://images6.alphacoders.com/955/955633.jpg"
 				className="card-img-top"
 				alt="..."
 				width="100%"

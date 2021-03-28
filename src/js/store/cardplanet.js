@@ -19,7 +19,7 @@ function CardPlanets({ name, features }) {
 	return (
 		<div className="card dark" style={{ width: "21rem" }}>
 			<img
-				src="https://i.ytimg.com/vi/r6UcxbuigU0/maxresdefault.jpg"
+				src="https://i.pinimg.com/originals/a7/95/96/a79596bdf26a00f6eda7e9e4d10c1e6c.jpg"
 				className="card-img-top"
 				alt="..."
 				width="100%"

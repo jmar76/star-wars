@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../../styles/formulario.scss";
-
+import emblemas from "../store/personajes/cabezas.jpg";
 export function Formulario() {
 	return (
 		<Fragment>
@@ -171,12 +171,15 @@ export function Formulario() {
 										/>
 									</div>
 								</div>
-								<div className="col-md-5">
+								<div className="col-md-3">
 									<div className="pay">
 										<button type="submit" className="btn btn-outline-danger">
 											<strong className="personalized">Finalize</strong>
 										</button>
 									</div>
+								</div>
+								<div className="col-md-4">
+									<img src="cabezas.jpg" width="180px" height="169px" />
 								</div>
 							</div>
 							<br></br>
