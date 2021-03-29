@@ -39,18 +39,18 @@ export const Navbar = () => {
 						</Link>
 						<li className="d">
 							<a href="https://es-es.facebook.com/StarWars/" target="example" rel="noopener">
-								<img src="facebook.png" className="a" height="37" width="57px" alt="..." />
+								<img src="facebook.png" className="a" height="33px" width="53px" alt="..." />
 							</a>
 							<a href="https://www.instagram.com/starwars/" target="example" rel="noopener">
-								<img src="instagram.png" className="a" height="37" width="57px" alt="..." />
+								<img src="instagram.png" className="a" height="33px" width="53px" alt="..." />
 							</a>
 
 							<a href="https://www.youtube.com/user" target="example" rel="noopener">
-								<img src="youtube.png" className="a" height="37" width="57px" alt="..." />
+								<img src="youtube.png" className="a" height="33px" width="53px" alt="..." />
 							</a>
 
 							<a href="https://twitter.com/starwars" target="example" rel="noopener">
-								<img src="twitter.png" className="a" height="37" width="57px" alt="..." />
+								<img src="twitter.png" className="a" height="33px" width="53px" alt="..." />
 							</a>
 						</li>
 					</ul>

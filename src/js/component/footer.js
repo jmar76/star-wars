@@ -9,5 +9,16 @@ export const Footer = () => (
 		<p className="padding">
 			Made with <i className="fas fa-crown text-danger" /> by <strong>JMAR76</strong>{" "}
 		</p>
+
+		<div className="contenido">
+			<div className="">
+				<h3>
+					<i>Imposible nada es. Dificil, muchas cosas son.</i>
+				</h3>
+			</div>
+			<div className="deplazado">
+				<h4>-Yoda-</h4>
+			</div>
+		</div>
 	</footer>
 );
